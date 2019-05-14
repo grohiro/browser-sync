@@ -28,7 +28,7 @@ module.exports.rewriteLinks = function(userServer) {
             // following ['"] + exact + possible multiple (imr srcset etc)
             "('|\")(https?://|/|\\.)?" +
             string +
-            "(?!:)(/)?(.*?)(?=[ ,'\"\\s])",
+            "(?!:)(/)?(.*?)(?=[ ,'\"\\s\\\\])",
         "g"
     );
 
